@@ -205,6 +205,14 @@ img {
   text-transform: uppercase;
 }
 
+.field {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #F2F2F2;
+  border-radius: 4px 0px 0px 4px;
+}
+
 .newsletter-button {
   font-family: "PT Sans", sans-serif;;
   font-weight: 700;
@@ -244,6 +252,11 @@ img {
 
 .breadcrumbs-item {
   list-style: none;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
 }
 
 .filter-title {
