@@ -1,0 +1,366 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.container {
+  width: 1200px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.navigation-item {
+  list-style: none;
+}
+
+.navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+
+.favorite-hotels {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+  background-color: #7DB54F;
+  border-radius:10px;
+}
+
+.button {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #756157;
+  border-radius: 4px;
+  border: transparent;
+}
+.main-index {
+  text-align: center;
+}
+
+.hero {
+  background-color: #766458;
+  background-image: url("../images/hero-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.advantages-lead,
+.services-lead {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.advantages-text,
+.services-text {
+  color: #333333;
+}
+
+.advantages-item {
+  list-style: none;
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.advantages-item-square,
+.advantages-item-tourist {
+  color:#000000;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-road {
+  color:#000000;
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.advantages-description-square,
+.advantages-description-road,
+.advantages-description-tourist {
+  color: #333333;
+}
+
+.services-item {
+  list-style: none;
+  }
+
+  .services-item-housing,
+  .services-item-souvenir {
+    background-color: rgba(131, 179, 211, 0.12);
+  }
+
+.services-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.services-description {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.search-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.search-text {
+  color: #333333;
+}
+
+.search-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #756157;
+  border-radius: 4px;
+}
+
+.newsletter-background {
+  color: #ffffff;
+  background-color: #766458;
+  background-image: url("../images/subscribe-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.newsletter-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.field {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #F2F2F2;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.newsletter-button {
+  font-family: "PT Sans", sans-serif;;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color:#ffffff;
+  background-color: #82B3D3;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.footer-social-item {
+  list-style: none;
+}
+
+.contacts-phone {
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.content-and-filter {
+  color: #ffffff;
+  background-color: #766458;
+  background-image: url("../images/filter.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs-item {
+  list-style: none;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.filter-item {
+  list-style: none;
+}
+
+.control-label {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.button-reset {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  border: transparent;
+}
+
+.control {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.select-control {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.products-card {
+  list-style: none;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.product-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.product-card-price {
+  font-weight: 400;
+}
+
+.product-card-button {
+  text-decoration: none;
+}
+
+.product-card-favorites {
+  background-color: #82B3D3;
+}
+
+.favorites {
+  background-color:  #7DB54F;
+}
+
+.product-card-rating {
+  display: inline-block;
+  font-weight: 400;
+  color:#333333;
+  background-color: #F2F2F2;
+}
+
+.pagination-item {
+  list-style: none;
+}
+
+.pagination-link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  background-color: #82B3D3;
+  border-radius: 4px;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.pagination-next {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: transparent;
+}
+
+.newsletter-text-catalog {
+  color: #333333;
+}
