@@ -790,16 +790,29 @@ img {
   margin-right: 200px;
 }
 
+.select {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
 .select-control {
+  position: absolute;
+  width: 292px;
   margin: 0;
   padding: 14px 20px;
-  width: 292px;
+  padding-right: 56px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  background-image: url("../images/select.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 12px 7px;
+  appearance: none;
 }
 
 .select-control:hover,
