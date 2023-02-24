@@ -808,20 +808,22 @@ img {
   color: #333333;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  background-color: #ffffff;
   background-image: url("../images/select.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
   background-size: 12px 7px;
   appearance: none;
+  cursor: pointer;
 }
 
 .select-control:hover,
-  .select-control:focus {
-  border-color: #68A2CA;
+.select-control:focus {
+  border: 2px solid #68A2CA;
 }
 
 .select-control:active {
-  border-color: #3F5E72;
+  border: 2px solid #3F5E72;
 }
 
 .view-list {
@@ -866,16 +868,15 @@ img {
   background-image: url("../images/view-icon-list.svg");
 }
 
-.viem-link:hover {
-  border-color: #000000;
+.viem-link:hover,
+.viem-link:active {
+  border: 2px solid #000000;
 }
 
 .viem-link:focus {
-  color: #68A2CA;
+  border: 2px solid #68A2CA;
 }
-.viem-link:active {
-  border-color: #000000;
-}
+
 .products-list {
   display: grid;
   grid-template-columns: repeat(3, 340px);
@@ -1003,6 +1004,7 @@ img {
   font-weight: 400;
   color:#333333;
   background-color: #F2F2F2;
+  cursor: none;
 }
 
 .products::before {
