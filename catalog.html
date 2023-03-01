@@ -36,7 +36,7 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link button button-user" href="#">Хочу сюда!</a>
+              <a class="button button-user" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -52,7 +52,7 @@
                 </a>
               </li>
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link">Гостиницы</a>
+                <a class="breadcrumbs-link breadcrumbs-link-сurrent">Гостиницы</a>
               </li>
             </ol>
           </header>
@@ -63,21 +63,24 @@
                 <legend class="filter-title">Инфраструктура:</legend>
                 <ul class="filter-list">
                   <li class="filter-item">
-                    <label class="control-label">
+                    <label class="control">
                       <input class="control-input" type="checkbox" name="swimming-pool" checked>
-                      Бассейн
+                      <span class="control-mark"></span>
+                      <span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="filter-item">
-                    <label class="control-label">
+                    <label class="control">
                       <input class="control-input" type="checkbox" name="parking" checked>
-                      Парковка
+                      <span class="control-mark"></span>
+                      <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="filter-item">
-                    <label class="control-label">
+                    <label class="control">
                       <input class="control-input" type="checkbox" name="wi-fi">
-                      Wi-Fi
+                      <span class="control-mark"></span>
+                      <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -86,24 +89,50 @@
                 <legend class="filter-title">Тип жилья:</legend>
                 <ul class="filter-list">
                   <li class="filter-item">
-                    <label class="control-label">
+                    <label class="control">
                       <input class="control-input" type="radio" name="type-of-housing" value="hotel" checked>
-                      Гостиница
+                      <span class="control-mark"></span>
+                      <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="filter-item">
-                    <label class="control-label">
+                    <label class="control">
                       <input class="control-input" type="radio" name="type-of-housing" value="motel">
-                      Мотель
+                      <span class="control-mark"></span>
+                      <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="filter-item">
-                    <label class="control-label">
+                    <label class="control">
                       <input class="control-input" type="radio" name="type-of-housing" value="apartments">
-                      Апартаменты
+                      <span class="control-mark"></span>
+                      <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
+              </fieldset>
+              <fieldset class="filter-group filter-group-range">
+                <legend class="filter-title">Стоимость, ₽:</legend>
+                <div class="range-wrapper">
+                  <div class="range-wrapper-inputs">
+                    <label class="range-label" for="price-from">от</label>
+                    <input class="range-input" type="number" id="price-from" name="min-price" value="0">
+                  </div>
+                  <div class="range-wrapper-inputs">
+                    <label class="range-label" for="price-up-to">до</label>
+                    <input class="range-input range-input-right" type="number" id="price-up-to" name="max-price" value="9000">
+                  </div>
+                </div>
+                <div class="range-scale">
+                  <div class="range-bar">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
               </fieldset>
               <div class="filter-button">
                 <button class="button button-submit" type="submit">Применить</button>
@@ -114,7 +143,7 @@
         </div>
         <section class="products">
           <h2 class="visually-hidden">Наши гостиницы</h2>
-          <div class="control">
+          <div class="sorting">
             <p class="products-text">Найдено гостиниц:
               <span class="products-result">38</span>
             </p>
@@ -124,7 +153,7 @@
                 <option value="expensive">Сначала дорогие</option>
                 <option value="popular">Сначала популярные</option>
               </select>
-          </div>
+            </div>
             <ul class="view-list">
               <li class="view-item">
                 <a class="viem-link viem-link-card viem-link-active" href="#">
