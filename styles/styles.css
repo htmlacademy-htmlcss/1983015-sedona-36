@@ -361,7 +361,7 @@ img {
 }
 
 .services-item {
-  position: relative;
+
   width: 400px;
   min-height: 385px;
   padding: 183px 85px 81px;
@@ -618,6 +618,10 @@ img {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
+/*.modal-container-close {
+  display: none;
+}*/
+
 .modal {
   position: relative;
   margin: auto;
@@ -645,6 +649,7 @@ img {
   background-repeat: no-repeat;
   border: none;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .modal-search-title {
@@ -658,9 +663,18 @@ img {
   color: #000000;
 }
 
-.modal-label {
+.modal-wrapper {
+  position: relative;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  width: 577px;
+  margin-bottom: 4px;
+}
+
+.modal-label {
+  width: 119px;
+  margin-right: 18px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -668,15 +682,34 @@ img {
   text-transform: capitalize;
 }
 
-.input-date {
-  margin-left: 24px;
-  flex-grow: 1;
-  padding: 12px 20px;
-  font: inherit;
+.modal-input {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
   font-size: 18px;
+  line-height: 24px;
   background-color: #F2F2F2;
   border: none;
   border-radius: 4px;
+}
+
+.input-date {
+  flex-grow: 1;
+  padding: 12px 40px 12px 20px;
+}
+
+.modal-calendar {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 20px;
+  height: 20px;
+  background-color: #F2F2F2;
+  background-image: url(../images/calendar.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 15px;
+  border: none;
+  opacity: 0.3;
+  cursor: pointer;
 }
 
 .data-text {
@@ -693,31 +726,69 @@ img {
   color: #FF5757;
 }
 
-.modal-wrapper {
+.modal-visitors {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
 }
 
 .visitors-wrapper {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+
+.quantity-wrapper {
+  display: flex;
   width: 110px;
-  margin-right: 88px;
   background-color: #F2F2F2;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  border: none;
   border-radius: 4px;
 }
 
 .modal-button {
-
-  background-image: url("../images/minus.svg");
+  width: 40px;
+  height: 48px;
+  padding: 14px 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
   border: none;
+  cursor: pointer;
 }
 
 .minus-button {
+  background-image: url("../images/minus.svg");
+}
 
+.plus-button {
+  background-image: url("../images/plus.svg");
+}
+
+.input-visitor {
+  width: 31px;
+  padding: 5px 5px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.modal-serch-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 577px;
+  padding: 18px 50px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .content-and-filter {
@@ -908,7 +979,8 @@ border-radius: 4px;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  color: #000000;
+  color: rgba(0, 0, 0, 0.3);
+
 }
 
 .range-input {
@@ -1101,7 +1173,6 @@ border-radius: 4px;
   background-size: 16px 14px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-
 }
 
 .viem-link-active {
@@ -1261,7 +1332,7 @@ border-radius: 4px;
   cursor: text;
 }
 
-.products::before {
+.products::after {
   position: absolute;
   bottom: 160px;
   width: 1060px;
