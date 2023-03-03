@@ -170,7 +170,7 @@
           <form action="https://echo.htmlacademy.ru/" method="get">
             <div class="modal-wrapper">
               <label class="modal-label" for="arrival-date">Дата заезда:</label>
-              <input class="modal-input input-date" type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020">
+              <input class="field modal-input input-date" type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020">
               <button class="modal-calendar" type="button">
                 <span class="visually-hidden">Выбора даты.</span>
               </button>
@@ -178,7 +178,7 @@
             <p class=" data-text data-past">Мы не можем отправить вас в прошлое.</p>
             <div class="modal-wrapper">
               <label class="modal-label" for="date-of-departure">Дата выезда:</label>
-              <input class="modal-input input-date" type="text" id="date-of-departure" name="date-of-departure" value="1 сентября 2023">
+              <input class="field modal-input input-date" type="text" id="date-of-departure" name="date-of-departure" value="1 сентября 2023">
               <button class="modal-calendar" type="button">
                 <span class="visually-hidden">Выбора даты.</span>
               </button>
@@ -191,14 +191,14 @@
                   <button class="modal-button minus-button" type="button">
                     <span class="visually-hidden">Уменьшения количества взрослых.</span>
                   </button>
-                  <input class="modal-input input-visitor" type="text" id="quantity-adult" name="quantity-adults" value="2">
+                  <input class="field modal-input input-visitor" type="text" id="quantity-adult" name="quantity-adults" value="2">
                   <button class="modal-button plus-button" type="button">
                     <span class="visually-hidden">Увелечение количества взрослых.</span>
                   </button>
                 </div>
               </div>
               <div class="visitors-wrapper">
-                <span class="modal-label">
+                <span class="modal-label-children">
                   <label class="modal-label" for="quantity-children">Дети:</label>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button">
@@ -211,7 +211,58 @@
                   <button class="modal-button minus-button" type="button">
                     <span class="visually-hidden">Уменьшения количества детей.</span>
                   </button>
-                  <input class="modal-input input-visitor" type="text" id="quantity-children" name="quantity-children" value="2">
+                  <input class="field modal-input input-visitor" type="text" id="quantity-children" name="quantity-children" value="2">
+                  <button class="modal-button plus-button" type="button">
+                    <span class="visually-hidden">Увеличения количества детей.</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <button class="modal-serch-button" type="submit">Найти</button>
+            <div class="modal-wrapper">
+              <label class="modal-label" for="arrival-date">Дата заезда:</label>
+              <input class="field modal-input input-date" type="text" id="arrival-date" name="arrival-date" value="27 апреля 2020">
+              <button class="modal-calendar" type="button">
+                <span class="visually-hidden">Выбора даты.</span>
+              </button>
+            </div>
+            <p class=" data-text data-past">Мы не можем отправить вас в прошлое.</p>
+            <div class="modal-wrapper">
+              <label class="modal-label" for="date-of-departure">Дата выезда:</label>
+              <input class="field modal-input input-date" type="text" id="date-of-departure" name="date-of-departure" value="1 сентября 2023">
+              <button class="modal-calendar" type="button">
+                <span class="visually-hidden">Выбора даты.</span>
+              </button>
+            </div>
+            <p class="data-text">На эти даты есть свободные номера. Пока есть.</p>
+            <div class="modal-visitors">
+              <div class="visitors-wrapper">
+                <label class="modal-label" for="quantity-adult">Взрослые:</label>
+                <div class="quantity-wrapper">
+                  <button class="modal-button minus-button" type="button">
+                    <span class="visually-hidden">Уменьшения количества взрослых.</span>
+                  </button>
+                  <input class="field modal-input input-visitor" type="text" id="quantity-adult" name="quantity-adults" value="2">
+                  <button class="modal-button plus-button" type="button">
+                    <span class="visually-hidden">Увелечение количества взрослых.</span>
+                  </button>
+                </div>
+              </div>
+              <div class="visitors-wrapper">
+                <span class="modal-label-children">
+                  <label class="modal-label" for="quantity-children">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button">
+                      <svg class="tooltip-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 26 26"><circle cx="13" cy="13" r="13" fill="#83B3D3"/><path fill="#fff" fill-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" clip-rule="evenodd"/></svg>
+                    </button>
+                    <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
+                <div class="quantity-wrapper">
+                  <button class="modal-button minus-button" type="button">
+                    <span class="visually-hidden">Уменьшения количества детей.</span>
+                  </button>
+                  <input class="field modal-input input-visitor" type="text" id="quantity-children" name="quantity-children" value="2">
                   <button class="modal-button plus-button" type="button">
                     <span class="visually-hidden">Увеличения количества детей.</span>
                   </button>
