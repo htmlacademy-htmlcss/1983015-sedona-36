@@ -67,21 +67,12 @@ img {
   display: flex;
   width: 1200px;
   padding: 0 70px;
-
 }
 
 .logo {
   position: absolute;
   top: 0;
   bottom: -6px;
-}
-
-.logo-inner:hover {
-  opacity: 0.6;
-}
-
-.logo-inner:active {
-  opacity: 0.3;
 }
 
 .logo-image {
@@ -124,14 +115,6 @@ img {
   text-decoration: none;
 }
 
-.navigation-link:not(.navigation-link-current):hover {
-  opacity: 60%;
-}
-
-.navigation-link:not(.navigation-link-current):active {
-  opacity: 30%;
-}
-
 .navigation-link-current::after {
   position: absolute;
   content: "";
@@ -159,6 +142,14 @@ img {
   position: relative;
   margin-right: 20px;
   background-image: url("../images/heart.svg");
+}
+
+.navigation-link:not(.navigation-link-current):hover {
+  opacity: 60%;
+}
+
+.navigation-link:not(.navigation-link-current):active {
+  opacity: 30%;
 }
 
 .favorite-hotels {
@@ -275,18 +266,19 @@ img {
 }
 
 .advantages-item-wrapper {
-  padding: 102px 85px;
+  width: 400px;
+  padding: 102px 80px;
 }
 
 .advantages-item-square,
 .advantages-item-tourist {
-  padding: 112px 85px;
+  padding: 112px 80px;
   color:#000000;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-item-road {
-  padding: 112px 85px;
+  padding: 112px 80px;
   color:#000000;
   background-color: rgba(131, 179, 211, 0.2);
 }
@@ -493,6 +485,7 @@ img {
   width: 475px;
   margin: 0 auto;
   margin-bottom: 54px;
+  font-weight: 400;
 }
 
 .newsletter-form {
@@ -756,7 +749,6 @@ img {
 
 .modal-visitors {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 48px;
 }
@@ -765,6 +757,12 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 247px;
+}
+
+.visitors-wrapper-children {
+  width: 242px;
+  margin-left: auto;
 }
 
 .quantity-wrapper {
@@ -824,12 +822,14 @@ img {
   font-size: 18px;
   line-height: 20px;
   border-radius: 0;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .input-visitor::-webkit-outer-spin-button,
 .input-visitor::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -883,12 +883,19 @@ img {
   border-radius: 50%;
 }
 
+.tooltip-toggle:hover {
+  opacity: 0.6;
+}
+
+.tooltip-toggle:active {
+  opacity: 0.3;
+}
+
 .tooltip-text {
   position: absolute;
   top: 100%;
   margin: 0;
   margin-top: 15px;
-  display: block;
   width: 256px;
   padding: 15px 18px 18px 22px;
   font-family: "PT Sans", sans-serif;
@@ -898,7 +905,7 @@ img {
   text-transform: none;
   color: #FFFFFF;
   background-color: #333333;
-  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   left: 50%;
   transform: translateX(-50%);
@@ -922,6 +929,14 @@ img {
 .tooltip-toggle:hover + .tooltip-text,
 .tooltip-toggle:focus + .tooltip-text {
   display: block;
+}
+
+.logo-inner:hover {
+  opacity: 0.6;
+}
+
+.logo-inner:active {
+  opacity: 0.3;
 }
 
 .content-and-filter {
@@ -972,8 +987,8 @@ img {
 }
 
 .breadcrumbs-link-index {
-  width: 21px;
-  height: 21px;
+  width: 20px;
+  height: 20px;
   background-image: url("../images/home.svg");
   background-repeat: no-repeat;
   background-size: 13px 15px;
@@ -982,8 +997,8 @@ img {
 
 .breadcrumbs-item::after {
   position: absolute;
-  top: 5px;
-  left: 23px;
+  top: 4px;
+  right: -11px;
   width: 8px;
   height: 11px;
   content: "";
@@ -1005,9 +1020,12 @@ img {
   opacity: 30%;
 }
 
+.filter-products {
+  width: 1060px;
+}
+
 .filter {
   display: flex;
-  width: 1060px;
 }
 
 .filter-group {
@@ -1112,7 +1130,7 @@ border-radius: 4px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 48px;
+  margin-bottom: 45px;
 }
 
 .range-label {
@@ -1122,7 +1140,7 @@ border-radius: 4px;
 .range-text {
   position: absolute;
   top: 12px;
-  right: 12px;
+  right: 20px;
   width: 18px;
   height: 24px;
   font-weight: 400;
@@ -1142,12 +1160,14 @@ border-radius: 4px;
   background-color: #F2F2F2;
   border: none;
   border-radius: 4px 0 0 4px;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1172,13 +1192,13 @@ border-radius: 4px;
 
 .range-scale {
   position: relative;
-  width: 287px;
+  width: 288px;
   border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .range-bar {
   position: absolute;
-  top:-2px;
+  top:-3px;
   border: 2px solid #FFFFFF;
 }
 
@@ -1198,12 +1218,12 @@ border-radius: 4px;
 
 .range-toggle:focus {
   outline: 3px solid #83B3D3;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .range-toggle:active {
   border: 2px solid #83B3D3;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .toggle-min {
@@ -1213,7 +1233,7 @@ border-radius: 4px;
 
 .toggle-max {
   top: -10px;
-  right: -10px;
+  right: -2px;
 }
 
 .filter-button {
@@ -1267,9 +1287,8 @@ border-radius: 4px;
 }
 
 .products {
-  position: relative;
   width: 1200px;
-  padding: 50px 70px 60px;
+  padding: 50px 70px 52px;
 }
 
 .sorting {
@@ -1312,7 +1331,8 @@ border-radius: 4px;
   background-repeat: no-repeat;
   background-position: right 20px center;
   background-size: 12px 7px;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   cursor: pointer;
 }
 
@@ -1336,10 +1356,9 @@ border-radius: 4px;
 
 
 .view-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 160px;
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  gap: 8px;
   margin: 0;
   margin-left: auto;
   padding: 0;
@@ -1387,6 +1406,7 @@ border-radius: 4px;
 }
 
 .products-list {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 340px);
   gap: 20px;
@@ -1416,6 +1436,7 @@ border-radius: 4px;
 }
 
 .product-card-image {
+  display: block;
   margin-bottom: 16px;
 }
 
@@ -1516,9 +1537,9 @@ border-radius: 4px;
   cursor: text;
 }
 
-.products::after {
+.products-list::after {
   position: absolute;
-  bottom: 160px;
+  bottom: -40px;
   width: 1060px;
   content: "";
   border-bottom: 1px solid #E6E6E6;
@@ -1526,13 +1547,19 @@ border-radius: 4px;
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   min-width: 400px;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.pagination-item:not(:last-child) {
+.pagination-item {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.pagination-item:last-child {
   margin-right: 8px;
 }
 
