@@ -640,9 +640,9 @@ img {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-/*.modal-container-close {
+.modal-container-close {
   display: none;
-}*/
+}
 
 .modal {
   position: relative;
@@ -910,7 +910,7 @@ img {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
-  /*display: none;*/
+  display: none;
 }
 
 .tooltip-text:after {
